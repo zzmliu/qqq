@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  // 继承父元素的字体颜色
+  color: inherit;
+}
+img{
+  // 图片默认的3px间距
+  // display block 就可以去掉 bug 
+  display: block;
+
+  
+  width: 100%;
+}
+   
+ul{
+  list-style: none;
+}
+
+.clearfix:after{
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+}

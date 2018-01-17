@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  /* 
+  body的高度是相对于  html标签的
+  body高度为0  但是加上颜色 有效果
+    因为浏览器认为 body是页面的根元素 哪怕没有高度 浏览器也会
+    自己加上颜色 
+  html 标签的 父元素 就是 屏幕  
+  */
+}
+body {
+  padding-top: 45px;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 45px;
+  background-color: yellowgreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  height: 100%;
+  padding-left: 80px;
+  position: relative;
+}
+.left_box {
+  height: 100%;
+  overflow: hidden;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.left_box ul li a {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.left_box ul .active a {
+  color: red;
+  border-right: none;
+}
+.right_box {
+  background-color: yellow;
+  height: 100%;
+}
